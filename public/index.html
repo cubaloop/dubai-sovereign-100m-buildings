@@ -449,6 +449,8 @@
           <p class="text-xs sm:text-sm opacity-80 mt-1">Haz clic en cualquier marcador de precio para ver la foto real del anuncio, métricas de Yield/PSF y saltar directamente al edificio. Los pines verdes indican los 6 edificios de la Cesta €100M.</p>
         </div>
         <div class="flex flex-wrap gap-2 text-xs font-bold">
+          <button onclick="switchMasterMapStyle('street')" class="px-3 py-2 rounded-xl surface-elevated border brass-border">🗺️ Mapa Calles</button>
+          <button onclick="switchMasterMapStyle('satellite')" class="px-3 py-2 rounded-xl surface-elevated border brass-border">🛰️ Satélite</button>
           <button onclick="focusMapOnGroup('all')" class="px-3.5 py-2 rounded-xl brass-bg">Ver Todos (55)</button>
           <button onclick="focusMapOnGroup('top100m')" class="px-3.5 py-2 rounded-xl bg-emerald-700 text-white">⭐ Enfocar Cesta €100M (6)</button>
         </div>
@@ -920,15 +922,33 @@
       }
     }
 
+    function createFreeTileLayer(mode = 'street') {
+      if (mode === 'satellite') {
+        return L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+          attribution: '&copy; Esri &amp; OpenStreetMap',
+          maxZoom: 19
+        });
+      }
+      return L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors',
+        maxZoom: 19
+      });
+    }
+
+    let masterBaseLayer = null;
+
+    function switchMasterMapStyle(mode) {
+      if (!masterMap) return;
+      if (masterBaseLayer) masterMap.removeLayer(masterBaseLayer);
+      masterBaseLayer = createFreeTileLayer(mode).addTo(masterMap);
+    }
+
     // Master Interactive Map (All 55 Buildings)
     function initMasterMap() {
       const container = document.getElementById('master-dubai-map');
       if (!container || !window.L) return;
       masterMap = L.map(container, { scrollWheelZoom: false }).setView([25.115, 55.245], 11);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; OpenStreetMap &amp; CartoDB',
-        maxZoom: 19
-      }).addTo(masterMap);
+      masterBaseLayer = createFreeTileLayer('street').addTo(masterMap);
       masterMarkersGroup = L.featureGroup().addTo(masterMap);
       renderMasterMapMarkers('all');
     }
@@ -1009,10 +1029,7 @@
         const mapEl = document.getElementById('single-building-leaflet');
         if (!singleBuildingMap) {
           singleBuildingMap = L.map(mapEl).setView([b.lat, b.lon], 15);
-          L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; OpenStreetMap',
-            maxZoom: 19
-          }).addTo(singleBuildingMap);
+          createFreeTileLayer('street').addTo(singleBuildingMap);
         } else {
           singleBuildingMap.invalidateSize();
           singleBuildingMap.setView([b.lat, b.lon], 15);
@@ -1049,9 +1066,7 @@
           const mapDiv = document.getElementById('inline-leaflet-' + sid);
           if (!inlineCardMaps[sid]) {
             const m = L.map(mapDiv, { scrollWheelZoom: false }).setView([b.lat, b.lon], 14);
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-              maxZoom: 19
-            }).addTo(m);
+            createFreeTileLayer('street').addTo(m);
             const pin = L.divIcon({
               className: '',
               html: `<div class="pf-map-pin">${formatMoneyFromEur(b.price_aed / state.fxEurAed)}</div>`,
