@@ -1082,7 +1082,7 @@
       }
     }
 
-    // Render the Top 6 €100M Basket Table with Real Photos & Map Triggers
+    // Render the Top 6 €100M Basket Table with Real Photos, Portal Asking vs Target Strike Price & Negotiation Scope
     function renderTopBasketTable() {
       const tbody = document.getElementById('top-basket-tbody');
       if (!tbody) return;
@@ -1096,8 +1096,12 @@
       };
       const rows = TOP_100M_IDS.map(id => state.buildings.find(b => String(b.id) === id)).filter(Boolean);
       tbody.innerHTML = rows.map(b => {
-        const eurPrice = b.price_aed / state.fxEurAed;
+        const eurAsk = b.price_aed / state.fxEurAed;
+        const strikeAed = b.strike_price_aed || Math.round(b.price_aed * 0.91);
+        const eurStrike = strikeAed / state.fxEurAed;
+        const negPct = b.negotiation_scope_pct || 9.0;
         const eurInc = (b.est_annual_income_aed || 0) / state.fxEurAed;
+        const yieldStrike = b.yield_at_strike_pct || b.effective_yield_pct;
         return `
           <tr class="hover:bg-amber-500/5 transition">
             <td class="py-3 px-4">
@@ -1110,10 +1114,17 @@
               </div>
             </td>
             <td class="py-3 px-4 font-bold brass-text text-xs">${roleLabels[String(b.id)] || b.asset_class}</td>
-            <td class="py-3 px-4 font-outfit font-bold">${formatMoneyFromEur(eurPrice)}<span class="block text-[11px] opacity-70">${(b.price_aed/1e6).toFixed(1)}M AED</span></td>
+            <td class="py-3 px-4 font-outfit">
+              <span class="text-xs line-through opacity-60 block">Ask: ${formatMoneyFromEur(eurAsk)}</span>
+              <strong class="text-sm text-emerald-600 block">Cierre: ${formatMoneyFromEur(eurStrike)}</strong>
+              <span class="inline-block px-1.5 py-0.5 rounded bg-emerald-600/15 text-emerald-700 dark:text-emerald-300 text-[10px] font-bold">-${negPct}% Negociación</span>
+            </td>
             <td class="py-3 px-4 text-xs">${Number(b.bua_sqft).toLocaleString()} sqft<span class="block text-[11px] opacity-70">${b.units ? b.units + ' Unidades' : 'Single Tenant'}</span></td>
-            <td class="py-3 px-4 font-bold text-emerald-600 text-xs">${b.psf_aed} AED/sqft<span class="block text-[11px] opacity-70">-${b.psf_discount_vs_area_pct}% vs ${b.area_benchmark_psf} AED</span></td>
-            <td class="py-3 px-4 font-outfit font-bold text-emerald-600">${formatMoneyFromEur(eurInc)}/año<span class="block text-[11px]">${b.effective_yield_pct.toFixed(2)}% ROI</span></td>
+            <td class="py-3 px-4 font-bold text-emerald-600 text-xs">
+              <span>Strike: ${b.strike_psf_aed || b.psf_aed} AED/sqft</span>
+              <span class="block text-[11px] opacity-75">DLD Real: ${b.dld_transacted_psf || b.area_benchmark_psf} AED/sqft</span>
+            </td>
+            <td class="py-3 px-4 font-outfit font-bold text-emerald-600">${formatMoneyFromEur(eurInc)}/año<span class="block text-[11px]">${yieldStrike.toFixed(2)}% Yield s/Cierre</span></td>
             <td class="py-3 px-4">
               <div class="flex flex-col gap-1 text-xs">
                 <button onclick="openBuildingMapModal('${b.id}')" class="px-2.5 py-1 rounded-lg surface-elevated border brass-border font-bold text-left">📍 Mapa y ${b.images_count || 1} Fotos</button>
@@ -1147,7 +1158,11 @@
 
       grid.innerHTML = chosen.map(b => {
         const eurPrice = b.price_aed / state.fxEurAed;
+        const strikeAed = b.strike_price_aed || Math.round(b.price_aed * 0.91);
+        const eurStrike = strikeAed / state.fxEurAed;
+        const negPct = b.negotiation_scope_pct || 9.0;
         const eurInc = (b.est_annual_income_aed || 0) / state.fxEurAed;
+        const yieldStrike = b.yield_at_strike_pct || b.effective_yield_pct;
         return `
           <div class="glass-panel rounded-3xl overflow-hidden border brass-border flex flex-col justify-between">
             <div>
@@ -1161,13 +1176,13 @@
               <div class="p-4 space-y-2.5 text-xs">
                 <h3 class="font-display text-base font-bold truncate">${b.title}</h3>
                 <div class="space-y-1.5 pt-1 border-t brass-border">
-                  <div class="flex justify-between"><span>Precio de Venta:</span><strong class="font-outfit">${formatMoneyFromEur(eurPrice)} (${(b.price_aed/1e6).toFixed(1)}M AED)</strong></div>
-                  <div class="flex justify-between"><span>Ingreso Anual:</span><strong class="font-outfit text-emerald-600">${formatMoneyFromEur(eurInc)}/año (${b.effective_yield_pct.toFixed(2)}%)</strong></div>
+                  <div class="flex justify-between"><span>Precio Lista Portal:</span><strong class="font-outfit line-through opacity-70">${formatMoneyFromEur(eurPrice)} (${(b.price_aed/1e6).toFixed(1)}M AED)</strong></div>
+                  <div class="flex justify-between"><span>Precio Objetivo Compra:</span><strong class="font-outfit text-emerald-600">${formatMoneyFromEur(eurStrike)} (-${negPct}% Neg.)</strong></div>
+                  <div class="flex justify-between"><span>Ingreso Anual / Yield s/Compra:</span><strong class="font-outfit text-emerald-600">${formatMoneyFromEur(eurInc)}/año (${yieldStrike.toFixed(2)}%)</strong></div>
                   <div class="flex justify-between"><span>Superficie BUA:</span><strong>${b.bua_sqft ? Number(b.bua_sqft).toLocaleString() + ' sqft' : 'Ver Ficha'}</strong></div>
-                  <div class="flex justify-between"><span>Tu Costo por Sqft:</span><strong class="text-emerald-600">${b.psf_aed ? b.psf_aed + ' AED/sqft' : 'N/A'} (Zona: ${b.area_benchmark_psf})</strong></div>
-                  <div class="flex justify-between"><span>Descuento Mayorista:</span><strong class="brass-text">${b.psf_discount_vs_area_pct > 0 ? '-' + b.psf_discount_vs_area_pct + '%' : 'En Mercado'}</strong></div>
+                  <div class="flex justify-between"><span>PSF Compra vs DLD Histórico:</span><strong class="text-emerald-600">${b.strike_psf_aed || b.psf_aed || 'N/A'} vs ${b.dld_transacted_psf || b.area_benchmark_psf} AED/sqft</strong></div>
                   <div class="flex justify-between"><span>Unidades / Tenencia:</span><strong>${b.units ? b.units + ' Uds' : 'Edificio Completo'} • ${b.tenure}</strong></div>
-                  <div class="flex justify-between"><span>Liquidez Reventa DLD:</span><strong>${b.resale_liquidity || 'Alta'}</strong></div>
+                  <div class="flex justify-between"><span>Volumen Ventas DLD Zona:</span><strong>${(b.dld_sales_volume || 1500).toLocaleString()} transacciones</strong></div>
                 </div>
               </div>
             </div>
@@ -1252,10 +1267,10 @@
       document.getElementById('sim-cap-label').textContent = `€${capM.toLocaleString()},000,000 (${(capAed / 1e6).toLocaleString()}M AED)`;
       document.getElementById('sim-years-label').textContent = years + (years === 1 ? ' Año' : ' Años');
 
-      let yieldPct = 0.0976;
+      let yieldPct = 0.0985;
       let flipPct = 0.2912;
       if (state.simProfile === 'yield') { yieldPct = 0.1185; flipPct = 0.1950; }
-      else if (state.simProfile === 'flip') { yieldPct = 0.0745; flipPct = 0.3840; }
+      else if (state.simProfile === 'flip') { yieldPct = 0.0794; flipPct = 0.3840; }
 
       const annualRentEur = capEur * yieldPct;
       const totalRentEur = annualRentEur * years;
@@ -1302,11 +1317,12 @@
 
     function updateBasketSummary() {
       const chosen = state.buildings.filter(b => state.selectedIds.includes(String(b.id)));
-      const totEur = chosen.reduce((acc, b) => acc + (b.price_aed / state.fxEurAed), 0);
+      const totAskEur = chosen.reduce((acc, b) => acc + (b.price_aed / state.fxEurAed), 0);
+      const totStrikeEur = chosen.reduce((acc, b) => acc + ((b.strike_price_aed || b.price_aed * 0.91) / state.fxEurAed), 0);
       const totIncEur = chosen.reduce((acc, b) => acc + (b.est_annual_income_aed / state.fxEurAed), 0);
-      const avgY = totEur > 0 ? ((totIncEur / totEur) * 100).toFixed(2) : '0.00';
+      const avgY = totStrikeEur > 0 ? ((totIncEur / totStrikeEur) * 100).toFixed(2) : '0.00';
       const el = document.getElementById('custom-basket-Summary');
-      if (el) el.textContent = `${chosen.length} Edificios • ${formatMoneyFromEur(totEur)} • ${avgY}% Yield`;
+      if (el) el.textContent = `${chosen.length} Edificios • Lista: ${formatMoneyFromEur(totAskEur)} → Compra: ${formatMoneyFromEur(totStrikeEur)} (${avgY}% Yield)`;
     }
 
     function renderCatalog() {
@@ -1340,7 +1356,11 @@
         const sid = String(b.id);
         const inBasket = state.selectedIds.includes(sid);
         const eurPrice = b.price_aed / state.fxEurAed;
+        const strikeAed = b.strike_price_aed || Math.round(b.price_aed * 0.91);
+        const eurStrike = strikeAed / state.fxEurAed;
+        const negPct = b.negotiation_scope_pct || 9.0;
         const eurInc = (b.est_annual_income_aed || 0) / state.fxEurAed;
+        const yieldStrike = b.yield_at_strike_pct || b.effective_yield_pct;
         const imgs = (b.images_all && b.images_all.length) ? b.images_all : [b.image_url];
         const curIdx = state.photoSlideIdx[sid] || 0;
         const currentImg = imgs[curIdx] || b.image_url;
@@ -1356,7 +1376,7 @@
               <div class="relative aspect-[16/10] bg-black/10 overflow-hidden group">
                 <img id="card-img-${sid}" src="${currentImg}" alt="${b.title}" loading="lazy" class="w-full h-full object-cover transition duration-300" />
                 <div class="absolute top-2.5 left-2.5 flex flex-wrap gap-1">
-                  <span class="px-2.5 py-1 rounded-full text-[10px] font-bold brass-bg shadow">${b.effective_yield_pct.toFixed(2)}% ${b.stated_roi_pct ? 'ROI Real' : 'Yield DLD'}</span>
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-bold brass-bg shadow">${yieldStrike.toFixed(2)}% Yield s/Compra</span>
                   ${discBadge}
                 </div>
                 <button onclick="toggleBuildingInBasket('${sid}')" class="absolute top-2.5 right-2.5 px-2.5 py-1 rounded-full text-[10px] font-bold ${inBasket ? 'bg-emerald-600 text-white' : 'bg-black/75 text-white'}">
@@ -1393,29 +1413,30 @@
 
                 <div class="grid grid-cols-3 gap-2 p-2.5 rounded-2xl surface-elevated text-xs">
                   <div>
-                    <span class="text-[10px] opacity-70 block">Precio</span>
-                    <strong class="font-outfit font-bold block">${formatMoneyFromEur(eurPrice)}</strong>
+                    <span class="text-[10px] opacity-70 block">Lista Portal</span>
+                    <strong class="font-outfit font-bold line-through opacity-75 block">${formatMoneyFromEur(eurPrice)}</strong>
+                  </div>
+                  <div>
+                    <span class="text-[10px] text-emerald-700 dark:text-emerald-400 font-bold block">Compra (-${negPct}%)</span>
+                    <strong class="font-outfit font-extrabold text-emerald-600 block">${formatMoneyFromEur(eurStrike)}</strong>
                   </div>
                   <div>
                     <span class="text-[10px] opacity-70 block">Renta/Año</span>
                     <strong class="font-outfit font-bold text-emerald-600 block">${formatMoneyFromEur(eurInc)}</strong>
                   </div>
-                  <div>
-                    <span class="text-[10px] opacity-70 block">Costo PSF</span>
-                    <strong class="font-outfit font-bold block">${b.psf_aed ? b.psf_aed + ' AED' : 'N/A'}</strong>
-                  </div>
                 </div>
 
-                <!-- Mandatory Collapsible Accordion for Long Description -->
+                <!-- Mandatory Collapsible Accordion for Long Description + Negotiation Thesis -->
                 <details class="text-xs surface-elevated rounded-xl p-2.5">
                   <summary class="font-bold brass-text flex items-center justify-between">
-                    <span>Ficha Técnica (${b.bua_sqft ? Number(b.bua_sqft).toLocaleString() + ' sqft' : 'Edificio Entero'}${b.units ? ' • ' + b.units + ' Uds' : ''})</span>
+                    <span>Tesis de Negociación &amp; DLD (${b.strike_psf_aed || b.psf_aed || 'N/A'} vs ${b.dld_transacted_psf || b.area_benchmark_psf} AED/sqft)</span>
                     <span>＋</span>
                   </summary>
                   <div class="mt-2 space-y-1.5 opacity-85">
+                    <p class="font-semibold text-emerald-700 dark:text-emerald-300">🎯 Palanca de Negociación (-${negPct}%): ${b.negotiation_lever || ''}</p>
                     <p>${b.description_clean || ''}</p>
                     <div class="flex items-center justify-between pt-1 border-t brass-border text-[11px]">
-                      <span>PSF Zona DLD: <strong>${b.area_benchmark_psf} AED/sqft</strong></span>
+                      <span>PSF Transado DLD: <strong>${b.dld_transacted_psf || b.area_benchmark_psf} AED/sqft</strong></span>
                       <a href="${b.share_url}" target="_blank" rel="noopener noreferrer" class="underline font-bold brass-text">Anuncio Original PF ↗</a>
                     </div>
                   </div>
@@ -1427,7 +1448,7 @@
               <button onclick="openBuildingMapModal('${sid}')" class="px-3 py-2.5 rounded-xl text-xs font-bold surface-elevated border brass-border hover:opacity-85 transition" title="Ver Mapa y Fotos Reales">
                 📍 Mapa
               </button>
-              <button onclick="openBookingModal('${b.community.replace(/'/g, '')} — ${b.title.replace(/'/g, '').slice(0, 35)} (${formatMoneyFromEur(eurPrice)})')" class="flex-1 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider brass-bg hover:opacity-90 transition">
+              <button onclick="openBookingModal('${b.community.replace(/'/g, '')} — Oferta Objetivo ${formatMoneyFromEur(eurStrike)} (Lista ${formatMoneyFromEur(eurPrice)})')" class="flex-1 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider brass-bg hover:opacity-90 transition">
                 Reservar Cita
               </button>
             </div>

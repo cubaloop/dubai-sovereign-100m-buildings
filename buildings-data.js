@@ -40,7 +40,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Samer Sarwani",
     "broker_name": "Arabian Sands Real Estate",
     "price_eur": 26750000,
-    "est_annual_income_eur": 2250000
+    "est_annual_income_eur": 2250000,
+    "dld_transacted_psf": 1590,
+    "dld_sales_volume": 3641,
+    "listed_date": "2026-10-22",
+    "strike_price_aed": 98500000,
+    "strike_price_eur": 24625000,
+    "negotiation_scope_pct": 7.9,
+    "savings_aed": 8500000,
+    "savings_eur": 2125000,
+    "strike_psf_aed": 1202,
+    "yield_at_strike_pct": 9.14,
+    "negotiation_lever": "Single-tenant commercial asset; institutional cash buyer can negotiate 7.9% discount to lock in a 9.14% cap rate (AED 1,202/sqft)."
   },
   {
     "id": "166524509",
@@ -83,7 +94,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Karim Abueicha",
     "broker_name": "VLAKAR REAL ESTATE L.L.C",
     "price_eur": 20000000,
-    "est_annual_income_eur": 1128000
+    "est_annual_income_eur": 1128000,
+    "dld_transacted_psf": 2010,
+    "dld_sales_volume": 2660,
+    "listed_date": "2026-10-30",
+    "strike_price_aed": 67600000,
+    "strike_price_eur": 16900000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 12400000,
+    "savings_eur": 3100000,
+    "strike_psf_aed": 6408,
+    "yield_at_strike_pct": 6.67,
+    "negotiation_lever": "Portal asking PSF (7583 AED) exceeds DLD historical transacted median (2010 AED); 15.5% price correction required."
   },
   {
     "id": "167876117",
@@ -126,7 +148,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Mariam Abbas",
     "broker_name": "Jade & Co Real Estate",
     "price_eur": 17500000,
-    "est_annual_income_eur": 1328250
+    "est_annual_income_eur": 1328250,
+    "dld_transacted_psf": 1470,
+    "dld_sales_volume": 8225,
+    "listed_date": "2026-11-02",
+    "strike_price_aed": 63700000,
+    "strike_price_eur": 15925000,
+    "negotiation_scope_pct": 9.0,
+    "savings_aed": 6300000,
+    "savings_eur": 1575000,
+    "strike_psf_aed": 839,
+    "yield_at_strike_pct": 8.34,
+    "negotiation_lever": "Standard institutional cash-buyer discount (9.0%) vs portal asking price; DLD area benchmark is 1470 AED/sqft."
   },
   {
     "id": "171943110",
@@ -169,7 +202,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Taimur Sajjad",
     "broker_name": "CRC",
     "price_eur": 2250000,
-    "est_annual_income_eur": 197325
+    "est_annual_income_eur": 197325,
+    "dld_transacted_psf": 1574,
+    "dld_sales_volume": 1641,
+    "listed_date": "2026-11-11",
+    "strike_price_aed": 8200000,
+    "strike_price_eur": 2050000,
+    "negotiation_scope_pct": 9.0,
+    "savings_aed": 800000,
+    "savings_eur": 200000,
+    "strike_psf_aed": 1190,
+    "yield_at_strike_pct": 9.63,
+    "negotiation_lever": "Standard institutional cash-buyer discount (9.0%) vs portal asking price; DLD area benchmark is 1574 AED/sqft."
   },
   {
     "id": "174635656",
@@ -212,7 +256,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Amrish Sukumar Chembi",
     "broker_name": "CRC",
     "price_eur": 5500000,
-    "est_annual_income_eur": 432850
+    "est_annual_income_eur": 432850,
+    "dld_transacted_psf": 1139,
+    "dld_sales_volume": 1051,
+    "listed_date": "2026-11-17",
+    "strike_price_aed": 17800000,
+    "strike_price_eur": 4450000,
+    "negotiation_scope_pct": 19.1,
+    "savings_aed": 4200000,
+    "savings_eur": 1050000,
+    "strike_psf_aed": 703,
+    "yield_at_strike_pct": 9.73,
+    "negotiation_lever": "Listed simultaneously at 22.0M AED and 20.0M AED ('Negotiable') across portals; target 17.8M AED cash closing."
   },
   {
     "id": "154636438",
@@ -255,7 +310,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Hazem Akari",
     "broker_name": "CBB Properties LLC",
     "price_eur": 6000000,
-    "est_annual_income_eur": 390000
+    "est_annual_income_eur": 390000,
+    "dld_transacted_psf": 1450,
+    "dld_sales_volume": 1500,
+    "listed_date": "2026-10-05",
+    "strike_price_aed": 21800000,
+    "strike_price_eur": 5450000,
+    "negotiation_scope_pct": 9.0,
+    "savings_aed": 2200000,
+    "savings_eur": 550000,
+    "strike_psf_aed": 223,
+    "yield_at_strike_pct": 7.16,
+    "negotiation_lever": "Standard institutional cash-buyer discount (9.0%) vs portal asking price; DLD area benchmark is 1450 AED/sqft."
   },
   {
     "id": "110498671",
@@ -298,7 +364,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Elena Polianskaia",
     "broker_name": "DDA Real Estate",
     "price_eur": 8250000,
-    "est_annual_income_eur": 563585
+    "est_annual_income_eur": 563585,
+    "dld_transacted_psf": 1650,
+    "dld_sales_volume": 16152,
+    "listed_date": "2026-07-02",
+    "strike_price_aed": 30200000,
+    "strike_price_eur": 7550000,
+    "negotiation_scope_pct": 8.5,
+    "savings_aed": 2800000,
+    "savings_eur": 700000,
+    "strike_psf_aed": 643,
+    "yield_at_strike_pct": 7.46,
+    "negotiation_lever": "100% occupied asset already priced 57% below Dubai South DLD median (1,650 AED/sqft); 8.5% negotiation scope for immediate cash transfer (643 AED/sqft)."
   },
   {
     "id": "161881416",
@@ -341,7 +418,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Oleh Kostiuk",
     "broker_name": "Prive Real Estate LLC",
     "price_eur": 7657500,
-    "est_annual_income_eur": 597285
+    "est_annual_income_eur": 597285,
+    "dld_transacted_psf": 1350,
+    "dld_sales_volume": 980,
+    "listed_date": "2026-10-20",
+    "strike_price_aed": 25900000,
+    "strike_price_eur": 6475000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 4730000,
+    "savings_eur": 1182500,
+    "strike_psf_aed": 2671,
+    "yield_at_strike_pct": 9.22,
+    "negotiation_lever": "Portal asking PSF (3159 AED) exceeds DLD historical transacted median (1350 AED); 15.5% price correction required."
   },
   {
     "id": "138753769",
@@ -384,7 +472,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Karim Abueicha",
     "broker_name": "VLAKAR REAL ESTATE L.L.C",
     "price_eur": 16250000,
-    "est_annual_income_eur": 1056250
+    "est_annual_income_eur": 1056250,
+    "dld_transacted_psf": 1520,
+    "dld_sales_volume": 5815,
+    "listed_date": "2026-09-01",
+    "strike_price_aed": 59200000,
+    "strike_price_eur": 14800000,
+    "negotiation_scope_pct": 9.0,
+    "savings_aed": 5800000,
+    "savings_eur": 1450000,
+    "strike_psf_aed": 1691,
+    "yield_at_strike_pct": 7.14,
+    "negotiation_lever": "Standard institutional cash-buyer discount (9.0%) vs portal asking price; DLD area benchmark is 1520 AED/sqft."
   },
   {
     "id": "145072637",
@@ -427,7 +526,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Karim Abueicha",
     "broker_name": "VLAKAR REAL ESTATE L.L.C",
     "price_eur": 18000000,
-    "est_annual_income_eur": 1359000
+    "est_annual_income_eur": 1359000,
+    "dld_transacted_psf": 1450,
+    "dld_sales_volume": 1500,
+    "listed_date": "2026-09-15",
+    "strike_price_aed": 60800000,
+    "strike_price_eur": 15200000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 11200000,
+    "savings_eur": 2800000,
+    "strike_psf_aed": 2252,
+    "yield_at_strike_pct": 8.94,
+    "negotiation_lever": "Portal asking PSF (2667 AED) exceeds DLD historical transacted median (1450 AED); 15.5% price correction required."
   },
   {
     "id": "138330399",
@@ -470,7 +580,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Abigelle Angeles",
     "broker_name": "Luxe Maison Real Estate",
     "price_eur": 5000000,
-    "est_annual_income_eur": 264500
+    "est_annual_income_eur": 264500,
+    "dld_transacted_psf": 1450,
+    "dld_sales_volume": 1500,
+    "listed_date": "2026-08-31",
+    "strike_price_aed": 16900000,
+    "strike_price_eur": 4225000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 3100000,
+    "savings_eur": 775000,
+    "strike_psf_aed": 6901,
+    "yield_at_strike_pct": 6.26,
+    "negotiation_lever": "Portal asking PSF (8167 AED) exceeds DLD historical transacted median (1450 AED); 15.5% price correction required."
   },
   {
     "id": "16302601",
@@ -513,7 +634,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Celine Marie",
     "broker_name": "SUN SHINE REAL ESTATE BROKERS",
     "price_eur": 3750000,
-    "est_annual_income_eur": 292500
+    "est_annual_income_eur": 292500,
+    "dld_transacted_psf": 1350,
+    "dld_sales_volume": 980,
+    "listed_date": "2026-02-11",
+    "strike_price_aed": 12700000,
+    "strike_price_eur": 3175000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 2300000,
+    "savings_eur": 575000,
+    "strike_psf_aed": 5665,
+    "yield_at_strike_pct": 9.21,
+    "negotiation_lever": "Portal asking PSF (6690 AED) exceeds DLD historical transacted median (1350 AED); 15.5% price correction required."
   },
   {
     "id": "161400117",
@@ -556,7 +688,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Rahul Manuja",
     "broker_name": "Mastermind Real Estate",
     "price_eur": 18750000,
-    "est_annual_income_eur": 1323750
+    "est_annual_income_eur": 1323750,
+    "dld_transacted_psf": 1590,
+    "dld_sales_volume": 3641,
+    "listed_date": "2026-10-19",
+    "strike_price_aed": 63400000,
+    "strike_price_eur": 15850000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 11600000,
+    "savings_eur": 2900000,
+    "strike_psf_aed": 2045,
+    "yield_at_strike_pct": 8.35,
+    "negotiation_lever": "Portal asking PSF (2419 AED) exceeds DLD historical transacted median (1590 AED); 15.5% price correction required."
   },
   {
     "id": "136070342",
@@ -599,7 +742,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Gunay Abdulaliyeva",
     "broker_name": "RAAS REAL ESTATE",
     "price_eur": 5000000,
-    "est_annual_income_eur": 393500
+    "est_annual_income_eur": 393500,
+    "dld_transacted_psf": 1139,
+    "dld_sales_volume": 1051,
+    "listed_date": "2026-08-26",
+    "strike_price_aed": 17800000,
+    "strike_price_eur": 4450000,
+    "negotiation_scope_pct": 11.0,
+    "savings_aed": 2200000,
+    "savings_eur": 550000,
+    "strike_psf_aed": 703,
+    "yield_at_strike_pct": 8.84,
+    "negotiation_lever": "Listed simultaneously at 22.0M AED and 20.0M AED ('Negotiable') across portals; target 17.8M AED cash closing."
   },
   {
     "id": "98270668",
@@ -642,7 +796,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Elena Polianskaia",
     "broker_name": "DDA Real Estate",
     "price_eur": 13000000,
-    "est_annual_income_eur": 1140100
+    "est_annual_income_eur": 1140100,
+    "dld_transacted_psf": 1574,
+    "dld_sales_volume": 1641,
+    "listed_date": "2026-06-04",
+    "strike_price_aed": 47300000,
+    "strike_price_eur": 11825000,
+    "negotiation_scope_pct": 9.0,
+    "savings_aed": 4700000,
+    "savings_eur": 1175000,
+    "strike_psf_aed": 710,
+    "yield_at_strike_pct": 9.64,
+    "negotiation_lever": "Standard institutional cash-buyer discount (9.0%) vs portal asking price; DLD area benchmark is 1574 AED/sqft."
   },
   {
     "id": "156896052",
@@ -685,7 +850,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "IBTISSAM AIT ZOUINET",
     "broker_name": "Emirates Auction LLC",
     "price_eur": 7250000,
-    "est_annual_income_eur": 594500
+    "est_annual_income_eur": 594500,
+    "dld_transacted_psf": 1450,
+    "dld_sales_volume": 1500,
+    "listed_date": "2026-10-09",
+    "strike_price_aed": 26400000,
+    "strike_price_eur": 6600000,
+    "negotiation_scope_pct": 9.0,
+    "savings_aed": 2600000,
+    "savings_eur": 650000,
+    "strike_psf_aed": 1282,
+    "yield_at_strike_pct": 9.01,
+    "negotiation_lever": "Standard institutional cash-buyer discount (9.0%) vs portal asking price; DLD area benchmark is 1450 AED/sqft."
   },
   {
     "id": "169271233",
@@ -727,7 +903,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "HASHIR",
     "broker_name": "ECO TOP REALESTATE",
     "price_eur": 6250000,
-    "est_annual_income_eur": 487500
+    "est_annual_income_eur": 487500,
+    "dld_transacted_psf": 1350,
+    "dld_sales_volume": 980,
+    "listed_date": "2026-11-05",
+    "strike_price_aed": 22800000,
+    "strike_price_eur": 5700000,
+    "negotiation_scope_pct": 9.0,
+    "savings_aed": 2200000,
+    "savings_eur": 550000,
+    "strike_psf_aed": 1442,
+    "yield_at_strike_pct": 8.55,
+    "negotiation_lever": "Standard institutional cash-buyer discount (9.0%) vs portal asking price; DLD area benchmark is 1350 AED/sqft."
   },
   {
     "id": "130214211",
@@ -770,7 +957,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Asem Bizrah",
     "broker_name": "FINE & COUNTRY DUBAI PALM JUMEIRAH",
     "price_eur": 6250000,
-    "est_annual_income_eur": 479847
+    "est_annual_income_eur": 479847,
+    "dld_transacted_psf": 1590,
+    "dld_sales_volume": 3641,
+    "listed_date": "2026-08-14",
+    "strike_price_aed": 21100000,
+    "strike_price_eur": 5275000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 3900000,
+    "savings_eur": 975000,
+    "strike_psf_aed": 1942,
+    "yield_at_strike_pct": 9.1,
+    "negotiation_lever": "Portal asking PSF (2301 AED) exceeds DLD historical transacted median (1590 AED); 15.5% price correction required."
   },
   {
     "id": "59759054",
@@ -813,7 +1011,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Ben Szczepanski",
     "broker_name": "Savills Commercial",
     "price_eur": 35500000,
-    "est_annual_income_eur": 2559550
+    "est_annual_income_eur": 2559550,
+    "dld_transacted_psf": 1480,
+    "dld_sales_volume": 11235,
+    "listed_date": "2026-03-04",
+    "strike_price_aed": 131000000,
+    "strike_price_eur": 32750000,
+    "negotiation_scope_pct": 7.7,
+    "savings_aed": 11000000,
+    "savings_eur": 2750000,
+    "strike_psf_aed": 1188,
+    "yield_at_strike_pct": 7.82,
+    "negotiation_lever": "Turnkey 2022 building (100% occupied); tighter 7.7% negotiation margin due to stabilized cash flow, closing at 1,188 AED/sqft."
   },
   {
     "id": "167870011",
@@ -856,7 +1065,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "IBRAHIM ALHUDAIDI",
     "broker_name": "Hamra Properties",
     "price_eur": 32500000,
-    "est_annual_income_eur": 2421250
+    "est_annual_income_eur": 2421250,
+    "dld_transacted_psf": 1160,
+    "dld_sales_volume": 1462,
+    "listed_date": "2026-11-02",
+    "strike_price_aed": 118300000,
+    "strike_price_eur": 29575000,
+    "negotiation_scope_pct": 9.0,
+    "savings_aed": 11700000,
+    "savings_eur": 2925000,
+    "strike_psf_aed": 799,
+    "yield_at_strike_pct": 8.19,
+    "negotiation_lever": "Standard institutional cash-buyer discount (9.0%) vs portal asking price; DLD area benchmark is 1160 AED/sqft."
   },
   {
     "id": "161399405",
@@ -899,7 +1119,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Angela Reznic",
     "broker_name": "Luxbridge International Realty",
     "price_eur": 19875000,
-    "est_annual_income_eur": 1431000
+    "est_annual_income_eur": 1431000,
+    "dld_transacted_psf": 1450,
+    "dld_sales_volume": 1500,
+    "listed_date": "2026-10-19",
+    "strike_price_aed": 67200000,
+    "strike_price_eur": 16800000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 12300000,
+    "savings_eur": 3075000,
+    "strike_psf_aed": 2100,
+    "yield_at_strike_pct": 8.52,
+    "negotiation_lever": "Portal asking PSF (2484 AED) exceeds DLD historical transacted median (1450 AED); 15.5% price correction required."
   },
   {
     "id": "171529208",
@@ -942,7 +1173,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Samer Abdallah",
     "broker_name": "Driven Properties",
     "price_eur": 5375000,
-    "est_annual_income_eur": 281250
+    "est_annual_income_eur": 281250,
+    "dld_transacted_psf": 1150,
+    "dld_sales_volume": 1460,
+    "listed_date": "2026-11-10",
+    "strike_price_aed": 19600000,
+    "strike_price_eur": 4900000,
+    "negotiation_scope_pct": 9.0,
+    "savings_aed": 1900000,
+    "savings_eur": 475000,
+    "strike_psf_aed": 1144,
+    "yield_at_strike_pct": 5.74,
+    "negotiation_lever": "Standard institutional cash-buyer discount (9.0%) vs portal asking price; DLD area benchmark is 1150 AED/sqft."
   },
   {
     "id": "155581481",
@@ -985,7 +1227,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Muhammad Sunain",
     "broker_name": "CASH MY PROPERTY L.L.C",
     "price_eur": 11250000,
-    "est_annual_income_eur": 711000
+    "est_annual_income_eur": 711000,
+    "dld_transacted_psf": 990,
+    "dld_sales_volume": 1189,
+    "listed_date": "2026-10-07",
+    "strike_price_aed": 40800000,
+    "strike_price_eur": 10200000,
+    "negotiation_scope_pct": 9.3,
+    "savings_aed": 4200000,
+    "savings_eur": 1050000,
+    "strike_psf_aed": 638,
+    "yield_at_strike_pct": 6.97,
+    "negotiation_lever": "66-unit Mogul Cluster block; 9.3% negotiation scope (618K AED/unit vs 750K AED DLD median unit price in Discovery Gardens)."
   },
   {
     "id": "58947808",
@@ -1028,7 +1281,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Karim Abueicha",
     "broker_name": "VLAKAR REAL ESTATE L.L.C",
     "price_eur": 20000000,
-    "est_annual_income_eur": 1442000
+    "est_annual_income_eur": 1442000,
+    "dld_transacted_psf": 1480,
+    "dld_sales_volume": 11235,
+    "listed_date": "2026-03-02",
+    "strike_price_aed": 67600000,
+    "strike_price_eur": 16900000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 12400000,
+    "savings_eur": 3100000,
+    "strike_psf_aed": 2704,
+    "yield_at_strike_pct": 8.53,
+    "negotiation_lever": "Portal asking PSF (3200 AED) exceeds DLD historical transacted median (1480 AED); 15.5% price correction required."
   },
   {
     "id": "165584282",
@@ -1071,7 +1335,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Majid  Mansour",
     "broker_name": "Seven Ocean Real Estate",
     "price_eur": 5000000,
-    "est_annual_income_eur": 375000
+    "est_annual_income_eur": 375000,
+    "dld_transacted_psf": 1150,
+    "dld_sales_volume": 1460,
+    "listed_date": "2026-10-28",
+    "strike_price_aed": 18200000,
+    "strike_price_eur": 4550000,
+    "negotiation_scope_pct": 9.0,
+    "savings_aed": 1800000,
+    "savings_eur": 450000,
+    "strike_psf_aed": 650,
+    "yield_at_strike_pct": 8.24,
+    "negotiation_lever": "Standard institutional cash-buyer discount (9.0%) vs portal asking price; DLD area benchmark is 1150 AED/sqft."
   },
   {
     "id": "172457234",
@@ -1114,7 +1389,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Aram Pogosyan",
     "broker_name": "Driven Properties",
     "price_eur": 32500000,
-    "est_annual_income_eur": 2343250
+    "est_annual_income_eur": 2343250,
+    "dld_transacted_psf": 1480,
+    "dld_sales_volume": 11235,
+    "listed_date": "2026-11-12",
+    "strike_price_aed": 118000000,
+    "strike_price_eur": 29500000,
+    "negotiation_scope_pct": 9.2,
+    "savings_aed": 12000000,
+    "savings_eur": 3000000,
+    "strike_psf_aed": 824,
+    "yield_at_strike_pct": 7.94,
+    "negotiation_lever": "Brand-new vacant building (requires lease-up or strata titration); 9.2% bulk cash discount secures 823 AED/sqft (-44.4% below JVC DLD median of 1,480 AED/sqft)."
   },
   {
     "id": "15831329",
@@ -1157,7 +1443,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Karim Abueicha",
     "broker_name": "VLAKAR REAL ESTATE L.L.C",
     "price_eur": 30000000,
-    "est_annual_income_eur": 2040000
+    "est_annual_income_eur": 2040000,
+    "dld_transacted_psf": 1555,
+    "dld_sales_volume": 1388,
+    "listed_date": "2025-12-12",
+    "strike_price_aed": 101400000,
+    "strike_price_eur": 25350000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 18600000,
+    "savings_eur": 4650000,
+    "strike_psf_aed": 2600,
+    "yield_at_strike_pct": 8.05,
+    "negotiation_lever": "Portal asking PSF (3077 AED) exceeds DLD historical transacted median (1555 AED); 15.5% price correction required."
   },
   {
     "id": "15831320",
@@ -1200,7 +1497,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Karim Abueicha",
     "broker_name": "VLAKAR REAL ESTATE L.L.C",
     "price_eur": 30000000,
-    "est_annual_income_eur": 2040000
+    "est_annual_income_eur": 2040000,
+    "dld_transacted_psf": 1555,
+    "dld_sales_volume": 1388,
+    "listed_date": "2025-12-12",
+    "strike_price_aed": 101400000,
+    "strike_price_eur": 25350000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 18600000,
+    "savings_eur": 4650000,
+    "strike_psf_aed": 2600,
+    "yield_at_strike_pct": 8.05,
+    "negotiation_lever": "Portal asking PSF (3077 AED) exceeds DLD historical transacted median (1555 AED); 15.5% price correction required."
   },
   {
     "id": "140138630",
@@ -1243,7 +1551,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Karim Abueicha",
     "broker_name": "VLAKAR REAL ESTATE L.L.C",
     "price_eur": 17500000,
-    "est_annual_income_eur": 1328250
+    "est_annual_income_eur": 1328250,
+    "dld_transacted_psf": 1470,
+    "dld_sales_volume": 8225,
+    "listed_date": "2026-09-04",
+    "strike_price_aed": 59200000,
+    "strike_price_eur": 14800000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 10800000,
+    "savings_eur": 2700000,
+    "strike_psf_aed": 2277,
+    "yield_at_strike_pct": 8.97,
+    "negotiation_lever": "Portal asking PSF (2692 AED) exceeds DLD historical transacted median (1470 AED); 15.5% price correction required."
   },
   {
     "id": "92260203",
@@ -1286,7 +1605,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Karim Abueicha",
     "broker_name": "VLAKAR REAL ESTATE L.L.C",
     "price_eur": 20000000,
-    "est_annual_income_eur": 1300000
+    "est_annual_income_eur": 1300000,
+    "dld_transacted_psf": 1520,
+    "dld_sales_volume": 5815,
+    "listed_date": "2026-05-21",
+    "strike_price_aed": 67600000,
+    "strike_price_eur": 16900000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 12400000,
+    "savings_eur": 3100000,
+    "strike_psf_aed": 3380,
+    "yield_at_strike_pct": 7.69,
+    "negotiation_lever": "Portal asking PSF (4000 AED) exceeds DLD historical transacted median (1520 AED); 15.5% price correction required."
   },
   {
     "id": "121990678",
@@ -1329,7 +1659,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Karim Abueicha",
     "broker_name": "VLAKAR REAL ESTATE L.L.C",
     "price_eur": 137500000,
-    "est_annual_income_eur": 9075000
+    "est_annual_income_eur": 9075000,
+    "dld_transacted_psf": 2437,
+    "dld_sales_volume": 6094,
+    "listed_date": "2026-07-27",
+    "strike_price_aed": 464800000,
+    "strike_price_eur": 116200000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 85200000,
+    "savings_eur": 21300000,
+    "strike_psf_aed": 9296,
+    "yield_at_strike_pct": 7.81,
+    "negotiation_lever": "Portal asking PSF (11000 AED) exceeds DLD historical transacted median (2437 AED); 15.5% price correction required."
   },
   {
     "id": "145065351",
@@ -1372,7 +1713,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Karim Abueicha",
     "broker_name": "VLAKAR REAL ESTATE L.L.C",
     "price_eur": 22000000,
-    "est_annual_income_eur": 1163800
+    "est_annual_income_eur": 1163800,
+    "dld_transacted_psf": 1450,
+    "dld_sales_volume": 1500,
+    "listed_date": "2026-09-15",
+    "strike_price_aed": 74400000,
+    "strike_price_eur": 18600000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 13600000,
+    "savings_eur": 3400000,
+    "strike_psf_aed": 4960,
+    "yield_at_strike_pct": 6.26,
+    "negotiation_lever": "Portal asking PSF (5867 AED) exceeds DLD historical transacted median (1450 AED); 15.5% price correction required."
   },
   {
     "id": "172873761",
@@ -1415,7 +1767,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Hossein Ali",
     "broker_name": "Golden Casana Real Estate",
     "price_eur": 4125000,
-    "est_annual_income_eur": 309375
+    "est_annual_income_eur": 309375,
+    "dld_transacted_psf": 1150,
+    "dld_sales_volume": 1460,
+    "listed_date": "2026-11-13",
+    "strike_price_aed": 13900000,
+    "strike_price_eur": 3475000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 2600000,
+    "savings_eur": 650000,
+    "strike_psf_aed": 1435,
+    "yield_at_strike_pct": 8.9,
+    "negotiation_lever": "Portal asking PSF (1703 AED) exceeds DLD historical transacted median (1150 AED); 15.5% price correction required."
   },
   {
     "id": "145072594",
@@ -1458,7 +1821,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Karim Abueicha",
     "broker_name": "VLAKAR REAL ESTATE L.L.C",
     "price_eur": 15000000,
-    "est_annual_income_eur": 1059000
+    "est_annual_income_eur": 1059000,
+    "dld_transacted_psf": 1590,
+    "dld_sales_volume": 3641,
+    "listed_date": "2026-09-15",
+    "strike_price_aed": 50700000,
+    "strike_price_eur": 12675000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 9300000,
+    "savings_eur": 2325000,
+    "strike_psf_aed": 4225,
+    "yield_at_strike_pct": 8.36,
+    "negotiation_lever": "Portal asking PSF (5000 AED) exceeds DLD historical transacted median (1590 AED); 15.5% price correction required."
   },
   {
     "id": "171053365",
@@ -1501,7 +1875,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Syed Abdul Moiz",
     "broker_name": "EVA Real Estate LLC",
     "price_eur": 5375000,
-    "est_annual_income_eur": 274662
+    "est_annual_income_eur": 274662,
+    "dld_transacted_psf": 1150,
+    "dld_sales_volume": 1460,
+    "listed_date": "2026-11-09",
+    "strike_price_aed": 18200000,
+    "strike_price_eur": 4550000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 3300000,
+    "savings_eur": 825000,
+    "strike_psf_aed": 2254,
+    "yield_at_strike_pct": 6.04,
+    "negotiation_lever": "Portal asking PSF (2663 AED) exceeds DLD historical transacted median (1150 AED); 15.5% price correction required."
   },
   {
     "id": "140139937",
@@ -1544,7 +1929,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Omar El Kurdi",
     "broker_name": "OSOUL PROPERTIES L.L.C",
     "price_eur": 17000000,
-    "est_annual_income_eur": 1377000
+    "est_annual_income_eur": 1377000,
+    "dld_transacted_psf": 1650,
+    "dld_sales_volume": 16152,
+    "listed_date": "2026-09-04",
+    "strike_price_aed": 61900000,
+    "strike_price_eur": 15475000,
+    "negotiation_scope_pct": 9.0,
+    "savings_aed": 6100000,
+    "savings_eur": 1525000,
+    "strike_psf_aed": 1838,
+    "yield_at_strike_pct": 8.9,
+    "negotiation_lever": "Standard institutional cash-buyer discount (9.0%) vs portal asking price; DLD area benchmark is 1650 AED/sqft."
   },
   {
     "id": "173758992",
@@ -1587,7 +1983,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Sugandha Malhotra",
     "broker_name": "Pangea Properties",
     "price_eur": 2000000,
-    "est_annual_income_eur": 170000
+    "est_annual_income_eur": 170000,
+    "dld_transacted_psf": 1150,
+    "dld_sales_volume": 3060,
+    "listed_date": "2026-11-15",
+    "strike_price_aed": 7400000,
+    "strike_price_eur": 1850000,
+    "negotiation_scope_pct": 7.5,
+    "savings_aed": 600000,
+    "savings_eur": 150000,
+    "strike_psf_aed": 684,
+    "yield_at_strike_pct": 9.19,
+    "negotiation_lever": "Identical 12-unit building listed by 4 brokers between 8.0M and 9.1M AED on PF/Bayut; anchor offer to lowest 8.0M ask minus 7.5% cash discount."
   },
   {
     "id": "172878869",
@@ -1630,7 +2037,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Victoria Wills",
     "broker_name": "EQUITY REAL ESTATES L.L.C",
     "price_eur": 35000000,
-    "est_annual_income_eur": 2523500
+    "est_annual_income_eur": 2523500,
+    "dld_transacted_psf": 1480,
+    "dld_sales_volume": 11235,
+    "listed_date": "2026-11-13",
+    "strike_price_aed": 126000000,
+    "strike_price_eur": 31500000,
+    "negotiation_scope_pct": 10.0,
+    "savings_aed": 14000000,
+    "savings_eur": 3500000,
+    "strike_psf_aed": 947,
+    "yield_at_strike_pct": 8.01,
+    "negotiation_lever": "Vacant brand-new block; 10.0% institutional bulk discount brings entry to 947 AED/sqft vs 1,480 AED/sqft DLD transacted median."
   },
   {
     "id": "145072533",
@@ -1673,7 +2091,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Karim Abueicha",
     "broker_name": "VLAKAR REAL ESTATE L.L.C",
     "price_eur": 14500000,
-    "est_annual_income_eur": 1281800
+    "est_annual_income_eur": 1281800,
+    "dld_transacted_psf": 820,
+    "dld_sales_volume": 2182,
+    "listed_date": "2026-09-15",
+    "strike_price_aed": 49000000,
+    "strike_price_eur": 12250000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 9000000,
+    "savings_eur": 2250000,
+    "strike_psf_aed": 3525,
+    "yield_at_strike_pct": 10.46,
+    "negotiation_lever": "Portal asking PSF (4173 AED) exceeds DLD historical transacted median (820 AED); 15.5% price correction required."
   },
   {
     "id": "145072340",
@@ -1716,7 +2145,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Karim Abueicha",
     "broker_name": "VLAKAR REAL ESTATE L.L.C",
     "price_eur": 70000000,
-    "est_annual_income_eur": 4942000
+    "est_annual_income_eur": 4942000,
+    "dld_transacted_psf": 1590,
+    "dld_sales_volume": 3641,
+    "listed_date": "2026-09-15",
+    "strike_price_aed": 236600000,
+    "strike_price_eur": 59150000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 43400000,
+    "savings_eur": 10850000,
+    "strike_psf_aed": 3756,
+    "yield_at_strike_pct": 8.36,
+    "negotiation_lever": "Portal asking PSF (4444 AED) exceeds DLD historical transacted median (1590 AED); 15.5% price correction required."
   },
   {
     "id": "15732702",
@@ -1759,7 +2199,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Karim Abueicha",
     "broker_name": "VLAKAR REAL ESTATE L.L.C",
     "price_eur": 7750000,
-    "est_annual_income_eur": 581250
+    "est_annual_income_eur": 581250,
+    "dld_transacted_psf": 1150,
+    "dld_sales_volume": 1460,
+    "listed_date": "2025-11-28",
+    "strike_price_aed": 26200000,
+    "strike_price_eur": 6550000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 4800000,
+    "savings_eur": 1200000,
+    "strike_psf_aed": 2183,
+    "yield_at_strike_pct": 8.87,
+    "negotiation_lever": "Portal asking PSF (2583 AED) exceeds DLD historical transacted median (1150 AED); 15.5% price correction required."
   },
   {
     "id": "133405983",
@@ -1802,7 +2253,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Mohamad Danab",
     "broker_name": "fam Properties - Branch 1",
     "price_eur": 12000000,
-    "est_annual_income_eur": 758400
+    "est_annual_income_eur": 758400,
+    "dld_transacted_psf": 990,
+    "dld_sales_volume": 1189,
+    "listed_date": "2026-08-21",
+    "strike_price_aed": 43500000,
+    "strike_price_eur": 10875000,
+    "negotiation_scope_pct": 9.4,
+    "savings_aed": 4500000,
+    "savings_eur": 1125000,
+    "strike_psf_aed": 386,
+    "yield_at_strike_pct": 6.97,
+    "negotiation_lever": "Older G+5 cluster building; 9.4% negotiation scope to account for common-area capex/refurbishment before strata resale."
   },
   {
     "id": "153320703",
@@ -1845,7 +2307,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Christian Jacobs",
     "broker_name": "Driven Properties",
     "price_eur": 2275000,
-    "est_annual_income_eur": 193375
+    "est_annual_income_eur": 193375,
+    "dld_transacted_psf": 1150,
+    "dld_sales_volume": 3060,
+    "listed_date": "2026-10-02",
+    "strike_price_aed": 7400000,
+    "strike_price_eur": 1850000,
+    "negotiation_scope_pct": 18.7,
+    "savings_aed": 1700000,
+    "savings_eur": 425000,
+    "strike_psf_aed": 684,
+    "yield_at_strike_pct": 10.45,
+    "negotiation_lever": "Identical 12-unit building listed by 4 brokers between 8.0M and 9.1M AED on PF/Bayut; anchor offer to lowest 8.0M ask minus 7.5% cash discount."
   },
   {
     "id": "153308648",
@@ -1888,7 +2361,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Christian Jacobs",
     "broker_name": "Driven Properties",
     "price_eur": 2075000,
-    "est_annual_income_eur": 176375
+    "est_annual_income_eur": 176375,
+    "dld_transacted_psf": 1150,
+    "dld_sales_volume": 3060,
+    "listed_date": "2026-10-02",
+    "strike_price_aed": 7400000,
+    "strike_price_eur": 1850000,
+    "negotiation_scope_pct": 10.8,
+    "savings_aed": 900000,
+    "savings_eur": 225000,
+    "strike_psf_aed": 684,
+    "yield_at_strike_pct": 9.53,
+    "negotiation_lever": "Identical 12-unit building listed by 4 brokers between 8.0M and 9.1M AED on PF/Bayut; anchor offer to lowest 8.0M ask minus 7.5% cash discount."
   },
   {
     "id": "145072569",
@@ -1931,7 +2415,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Karim Abueicha",
     "broker_name": "VLAKAR REAL ESTATE L.L.C",
     "price_eur": 15000000,
-    "est_annual_income_eur": 1222500
+    "est_annual_income_eur": 1222500,
+    "dld_transacted_psf": 1216,
+    "dld_sales_volume": 1818,
+    "listed_date": "2026-09-15",
+    "strike_price_aed": 52500000,
+    "strike_price_eur": 13125000,
+    "negotiation_scope_pct": 12.5,
+    "savings_aed": 7500000,
+    "savings_eur": 1875000,
+    "strike_psf_aed": 597,
+    "yield_at_strike_pct": 9.31,
+    "negotiation_lever": "Broker portfolio umbrella listing across PF/Bayut; 12.5% negotiation margin on direct Principal-to-Principal LOI."
   },
   {
     "id": "171942053",
@@ -1974,7 +2469,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Akram Hantoli",
     "broker_name": "Blue Palace Real Estate",
     "price_eur": 41250000,
-    "est_annual_income_eur": 2326500
+    "est_annual_income_eur": 2326500,
+    "dld_transacted_psf": 2010,
+    "dld_sales_volume": 2660,
+    "listed_date": "2026-11-11",
+    "strike_price_aed": 139400000,
+    "strike_price_eur": 34850000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 25600000,
+    "savings_eur": 6400000,
+    "strike_psf_aed": 6336,
+    "yield_at_strike_pct": 6.68,
+    "negotiation_lever": "Portal asking PSF (7500 AED) exceeds DLD historical transacted median (2010 AED); 15.5% price correction required."
   },
   {
     "id": "125185884",
@@ -2017,7 +2523,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Celine Marie",
     "broker_name": "SUN SHINE REAL ESTATE BROKERS",
     "price_eur": 2500000,
-    "est_annual_income_eur": 175000
+    "est_annual_income_eur": 175000,
+    "dld_transacted_psf": 1350,
+    "dld_sales_volume": 980,
+    "listed_date": "2026-08-03",
+    "strike_price_aed": 8400000,
+    "strike_price_eur": 2100000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 1600000,
+    "savings_eur": 400000,
+    "strike_psf_aed": 2046,
+    "yield_at_strike_pct": 8.33,
+    "negotiation_lever": "Portal asking PSF (2436 AED) exceeds DLD historical transacted median (1350 AED); 15.5% price correction required."
   },
   {
     "id": "171056881",
@@ -2060,7 +2577,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Majid Hameed",
     "broker_name": "fam Properties - Branch 4",
     "price_eur": 2200000,
-    "est_annual_income_eur": 187000
+    "est_annual_income_eur": 187000,
+    "dld_transacted_psf": 1150,
+    "dld_sales_volume": 3060,
+    "listed_date": "2026-11-09",
+    "strike_price_aed": 7400000,
+    "strike_price_eur": 1850000,
+    "negotiation_scope_pct": 15.9,
+    "savings_aed": 1399999,
+    "savings_eur": 350000,
+    "strike_psf_aed": 684,
+    "yield_at_strike_pct": 10.11,
+    "negotiation_lever": "Identical 12-unit building listed by 4 brokers between 8.0M and 9.1M AED on PF/Bayut; anchor offer to lowest 8.0M ask minus 7.5% cash discount."
   },
   {
     "id": "72727567",
@@ -2102,7 +2630,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Mouhammad Fakkas",
     "broker_name": "RZR REAL ESTATE L.L.C",
     "price_eur": 9000000,
-    "est_annual_income_eur": 675000
+    "est_annual_income_eur": 675000,
+    "dld_transacted_psf": 1150,
+    "dld_sales_volume": 1460,
+    "listed_date": "2026-04-05",
+    "strike_price_aed": 30400000,
+    "strike_price_eur": 7600000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 5600000,
+    "savings_eur": 1400000,
+    "strike_psf_aed": 2092,
+    "yield_at_strike_pct": 8.88,
+    "negotiation_lever": "Portal asking PSF (2478 AED) exceeds DLD historical transacted median (1150 AED); 15.5% price correction required."
   },
   {
     "id": "127006738",
@@ -2145,7 +2684,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Ali",
     "broker_name": "Eqarat.com LLC",
     "price_eur": 12500000,
-    "est_annual_income_eur": 2500000
+    "est_annual_income_eur": 2500000,
+    "dld_transacted_psf": 1150,
+    "dld_sales_volume": 3060,
+    "listed_date": "2026-08-07",
+    "strike_price_aed": 46000000,
+    "strike_price_eur": 11500000,
+    "negotiation_scope_pct": 8.0,
+    "savings_aed": 4000000,
+    "savings_eur": 1000000,
+    "strike_psf_aed": 563,
+    "yield_at_strike_pct": 21.74,
+    "negotiation_lever": "High-yield leasehold staff accommodation; 8.0% cash discount brings entry to 46.0M AED (21.7% cash-on-cash yield)."
   },
   {
     "id": "132503951",
@@ -2188,7 +2738,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Muhammad Waseem",
     "broker_name": "Ideal Homes Real Estate Brokers",
     "price_eur": 1500000,
-    "est_annual_income_eur": 117000
+    "est_annual_income_eur": 117000,
+    "dld_transacted_psf": 1350,
+    "dld_sales_volume": 980,
+    "listed_date": "2026-08-19",
+    "strike_price_aed": 5500000,
+    "strike_price_eur": 1375000,
+    "negotiation_scope_pct": 9.0,
+    "savings_aed": 500000,
+    "savings_eur": 125000,
+    "strike_psf_aed": null,
+    "yield_at_strike_pct": 8.51,
+    "negotiation_lever": "Standard institutional cash-buyer discount (9.0%) vs portal asking price; DLD area benchmark is 1350 AED/sqft."
   },
   {
     "id": "158261809",
@@ -2231,7 +2792,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Bilal Nasir  Khan",
     "broker_name": "Nexa Realty L.L.C",
     "price_eur": 9375000,
-    "est_annual_income_eur": 703125
+    "est_annual_income_eur": 703125,
+    "dld_transacted_psf": 1150,
+    "dld_sales_volume": 1460,
+    "listed_date": "2026-10-12",
+    "strike_price_aed": 34000000,
+    "strike_price_eur": 8500000,
+    "negotiation_scope_pct": 9.3,
+    "savings_aed": 3500000,
+    "savings_eur": 875000,
+    "strike_psf_aed": 773,
+    "yield_at_strike_pct": 8.27,
+    "negotiation_lever": "9.3% bulk negotiation scope; brings per-unit acquisition to 1.06M AED (773 AED/sqft vs 1,150 AED/sqft DLD benchmark)."
   },
   {
     "id": "171062391",
@@ -2274,7 +2846,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Angela Reznic",
     "broker_name": "Luxbridge International Realty",
     "price_eur": 6500000,
-    "est_annual_income_eur": 487500
+    "est_annual_income_eur": 487500,
+    "dld_transacted_psf": 1150,
+    "dld_sales_volume": 1460,
+    "listed_date": "2026-11-09",
+    "strike_price_aed": 22000000,
+    "strike_price_eur": 5500000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 4000000,
+    "savings_eur": 1000000,
+    "strike_psf_aed": 2725,
+    "yield_at_strike_pct": 8.86,
+    "negotiation_lever": "Portal asking PSF (3221 AED) exceeds DLD historical transacted median (1150 AED); 15.5% price correction required."
   },
   {
     "id": "166080724",
@@ -2317,7 +2900,18 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Daniela Motta",
     "broker_name": "Huspy Dubai",
     "price_eur": 13750000,
-    "est_annual_income_eur": 1215500
+    "est_annual_income_eur": 1215500,
+    "dld_transacted_psf": 820,
+    "dld_sales_volume": 2182,
+    "listed_date": "2026-10-29",
+    "strike_price_aed": 50000000,
+    "strike_price_eur": 12500000,
+    "negotiation_scope_pct": 9.0,
+    "savings_aed": 5000000,
+    "savings_eur": 1250000,
+    "strike_psf_aed": 962,
+    "yield_at_strike_pct": 9.72,
+    "negotiation_lever": "Standard institutional cash-buyer discount (9.0%) vs portal asking price; DLD area benchmark is 820 AED/sqft."
   },
   {
     "id": "161399900",
@@ -2360,6 +2954,17 @@ window.PF_BUILDINGS_DATA = [
     "agent_name": "Rahul Manuja",
     "broker_name": "Mastermind Real Estate",
     "price_eur": 125000000,
-    "est_annual_income_eur": 6637500
+    "est_annual_income_eur": 6637500,
+    "dld_transacted_psf": 2115,
+    "dld_sales_volume": 3023,
+    "listed_date": "2026-10-19",
+    "strike_price_aed": 422500000,
+    "strike_price_eur": 105625000,
+    "negotiation_scope_pct": 15.5,
+    "savings_aed": 77500000,
+    "savings_eur": 19375000,
+    "strike_psf_aed": 13040,
+    "yield_at_strike_pct": 6.28,
+    "negotiation_lever": "Portal asking PSF (15432 AED) exceeds DLD historical transacted median (2115 AED); 15.5% price correction required."
   }
 ];
