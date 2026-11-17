@@ -1,0 +1,12 @@
+{
+  "name": "dubai-sovereign-100m-buildings-portal",
+  "version": "1.0.0",
+  "description": "Dubai Whole-Building Sovereign Institutional Investment Portal (€100M Tranche / €400M Mandate)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
